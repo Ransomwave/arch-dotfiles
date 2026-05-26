@@ -5,17 +5,20 @@ echo Take into account that this system has been setup in a VM with 3D accelerat
 read -p "Press enter to continue..."
 
 echo Updating the pacman registry...
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
+
+echo Installing virtualbox guest utilities...
+sudo pacman -S virtualbox-guest-utils mesa --noconfirm
+sudo systemctl enable --now vboxservice
 
 echo Installing the micro editor...
 sudo pacman -S micro --noconfirm
 
 echo Installing X, i3 and related packages...
-sudo pacman -S xorg-server xorg-xinit i3-wm polybar dmenu alacritty picom feh dunst networkmanager network-manager-applet --noconfirm
+sudo pacman -S curl xorg-server xorg-xinit i3-wm polybar dmenu alacritty picom feh dunst rofi networkmanager network-manager-applet --noconfirm
 
 echo Downloading wallpaper...
-mkdir -p ~/Pictures/wallpapers
-sudo pacman -S curl --noconfirm
+mkdir -p ~/Pictures
 curl -L https://raw.githubusercontent.com/MrDLingters/MonochromeWin11/main/Wallpapers/wallhaven-l36zrl.jpg -o ~/Pictures/wallpaper.jpg
 
 echo Setting up i3...
