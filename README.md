@@ -1,5 +1,6 @@
-![Result](./resources/terminal.png)
-![alt text](./resources/desktop.png)
+![Terminal](./resources/terminal.png)
+![Launcher](./resources/launcher.png)
+![Desktop](./resources/desktop.png)
 
 # Arch Linux Dotfiles
 
