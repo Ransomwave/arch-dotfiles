@@ -1,8 +1,14 @@
 *
 !.gitignore
+!alacritty
 !alacritty/**
+!gtk-3.0
 !gtk-3.0/**
+!i3
 !i3/**
+!picom
 !picom/**
+!polybar
 !polybar/**
+!rofi
 !rofi/**
