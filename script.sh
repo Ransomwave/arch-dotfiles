@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 echo Please make sure your system is already set up with a user account and that you have credentials for sudo!
+echo Take into account that this system has been setup in a VM with 3D acceleration enabled!!
 read -p "Press enter to continue..."
 
 echo Updating the pacman registry...
