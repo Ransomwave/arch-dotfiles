@@ -13,3 +13,6 @@
 !rofi
 !rofi/**
 !script.sh
+!README.md
+!resources
+!resources/**
