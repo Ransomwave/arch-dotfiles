@@ -22,7 +22,7 @@ picom \
 feh \
 dunst \
 networkmanager \
-network-manager-applet \ 
+network-manager-applet \
 --noconfirm
 
 echo Downloading wallpaper...
