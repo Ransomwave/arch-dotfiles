@@ -11,19 +11,7 @@ echo Installing the micro editor...
 sudo pacman -S micro --noconfirm
 
 echo Installing X, i3 and related packages...
-sudo pacman -S \
-xorg-server \
-xorg-xinit \
-i3-wm \
-polybar \
-dmenu \
-alacritty \
-picom \
-feh \
-dunst \
-networkmanager \
-network-manager-applet \
---noconfirm
+sudo pacman -S xorg-server xorg-xinit i3-wm polybar dmenu alacritty picom feh dunst networkmanager network-manager-applet --noconfirm
 
 echo Downloading wallpaper...
 mkdir -p ~/Pictures/wallpapers
