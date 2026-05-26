@@ -45,8 +45,8 @@ mkdir -p ~/.config/gtk-3.0
 cp ./gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini
 
 echo Starting NetworkManager..
-systemctl enable NetworkManager
-systemctl start NetworkManager
+sudo systemctl enable NetworkManager
+sudo systemctl start NetworkManager
 
 echo Finished!
 echo Get into the desktop environment by running "startx".
